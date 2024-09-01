@@ -1,0 +1,45 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+    padding-block: 1.5rem;
+    width: 100%;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.75rem;
+    text-transform: uppercase;
+}
+
+.nav li {
+    color: hsl(273, 4%, 51%);
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.nav li:hover {
+    color:  hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+.nav button {
+    color: black;
+    border-color: hsl(256, 26%, 20%);
+    border-width: 2px;
+    transition: all .3s;
+}
+
+.nav button:hover {
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+
+  }

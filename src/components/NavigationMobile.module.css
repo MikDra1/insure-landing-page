@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+  padding-block: 0.75rem;
+  height: 4rem;
+}
+
+.menu {
+  position: absolute;
+  inset: 0;
+  top: 4rem;
+  z-index: 3;
+
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  background-image: url("../../public/images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+  font-size: clamp(1rem, 3vw, 2rem);
+  padding-top: 5rem;
+}

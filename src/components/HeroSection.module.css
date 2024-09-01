@@ -1,0 +1,117 @@
+.hero {
+  background-color: hsl(256, 26%, 20%);
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  color: white;
+  line-height: 1;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.hero h1::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    height: 1px;
+    width: 30%;
+    background-color: hsl(273, 4%, 51%);
+    display: none;
+}
+
+.content {
+  padding: 4rem 2rem;
+  padding-bottom: 5rem;
+  display: grid;
+  gap: 1rem;
+  background-image: url("../../public/images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.content p {
+  color: hsl(273, 4%, 51%);
+}
+
+.content button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .3s;
+}
+
+.content button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.featuredImage {
+  margin-inline: auto;
+}
+
+.imageAbs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(60%);
+}
+
+.imageAbs2, .imageAbs3 {
+    display: none;
+    position: absolute;
+}
+
+.imageAbs2 {
+    top: 0;
+    right: 0;
+}
+
+.imageAbs3 {
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+
+}
+
+@media (min-width: 1100px) {
+    .imageAbs2, .imageAbs3 {
+    display: block;
+}
+  .content {
+    background-image: none;
+  }
+  .hero h1 {
+  font-size: 4rem;
+}
+
+  .imageAbs {
+    display: none;
+  }
+  .featuredImage {
+    transform: translateY(15%);
+  }
+  .content button {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .hero h1::after {
+    display: block;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-inline: 13%;
+    text-align: start;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero {
+    padding-inline: 15%;
+    gap: 5rem;
+  }
+}

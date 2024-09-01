@@ -1,0 +1,30 @@
+.benefit {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 86%;
+    margin-inline: auto;
+}
+
+.benefit h3 {
+    margin-top: .75rem;
+    font-size: 1.5rem;
+}
+
+.benefit p {
+    color: hsl(216, 30%, 68%);
+}
+
+@media (min-width: 950px) {
+    .benefit {
+        align-items: flex-start;
+        text-align: start;
+    }
+    .benefit h3 {
+        font-size: 1.75rem;
+    }
+}
